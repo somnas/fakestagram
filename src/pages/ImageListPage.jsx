@@ -8,7 +8,7 @@ export default function ImageListPage() {
     function handleOnClick() {
         fetch("https://image-mock-data.firebaseio.com/images.json")
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => setImageList(data))
     }
     return (
         <>
