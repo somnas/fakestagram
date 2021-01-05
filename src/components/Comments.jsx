@@ -6,7 +6,7 @@ export default function Comments() {
 
     function handleOnClick() {
         const input = inputRef.current;
-        if(input.value) {
+        if(input.value !== "") {
             addComment([...commentList, input.value]);
             input.value = "";
         }        
