@@ -10,8 +10,6 @@ export default function Comments() {
             addComment([...commentList, input.value]);
             input.value = "";
         }        
-        
-        console.log(commentList);
     }
         
     return (        
