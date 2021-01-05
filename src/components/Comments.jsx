@@ -5,9 +5,10 @@ export default function Comments() {
     const [commentList, addComment] = useState([]) 
 
     function handleOnClick() {
-        const value = inputRef.current.value;
-        if(value) {
-            addComment([...commentList, value]);
+        const input = inputRef.current;
+        if(input.value) {
+            addComment([...commentList, input.value]);
+            input.value = "";
         }        
         
         console.log(commentList);
